@@ -1,1 +1,114 @@
-/* место для вашего кода */
+
+/* header */
+
+.header {
+    height: 105px;
+    display: grid;
+    grid-template-columns: 454px 148px 184px 240px;
+    grid-template-areas: "header__menu header__logo . address";
+    align-items: center;
+    margin: 92px 24px 96px;
+}
+
+.header__menu {
+    grid-area: header__menu;
+}
+
+.header__links-list {
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    
+}
+
+.header__links-list-item {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    list-style: circle;
+}
+
+.header__link {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+/*не убирается граница у ссылки на главную страницу*/
+
+.header__link_active {
+    list-style: none;
+    border: none;
+} 
+
+.header__logo {
+    grid-area: header__logo;
+}
+
+.header__logo-image {
+    width: 148px;
+    height: 105px;
+}
+
+.address {
+    grid-area: address;
+
+}
+
+.header__contacts {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+.header__address {
+    max-width: 237px;
+    width: 100%;
+    justify-self: end;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
+}
+
+/*cover*/
+
+.cover {
+    border: 1px solid red;
+    background-image: url(' /images/cover.jpg');
+    height: 757px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 757px;
+}
+
+.overlay {
+
+}
+
+.cover__title {
+    margin: 165px 50px 147px;
+}
+
+.aligned-text {
+    display: block;
+    font-weight: 700;
+    line-height: 115px;
+    color: #FFFFFF;
+    font-size: 100px;
+}
+
+.aligned-text_center {
+    text-align: center;
+    line-height: 100px;
+}
+
+.aligned-text_right {
+    text-align: right;
+    line-height: 100px;
+}
+
+.letter-spacing-extended {
+    letter-spacing: 1em;
+}
