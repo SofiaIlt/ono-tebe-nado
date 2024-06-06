@@ -97,7 +97,6 @@
 
 .cover__title {
   padding: 165px 50px 147px;
-  
 }
 
 .aligned-text {
@@ -113,45 +112,52 @@
 .aligned-text_center {
   text-align: center;
   line-height: 100px;
+  margin-top: 20px;
 }
 
 .aligned-text_right {
   text-align: right;
   line-height: 100px;
+  margin-top: 20px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0.3em;
 }
 
 .letter-spacing-extended {
-  letter-spacing: 1em;
+  letter-spacing: 0.6em;
 }
 
 .cover__description {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  gap: 110px;
+  gap: 79px;
 }
 
 .cover__description-text {
   position: relative;
   z-index: 1;
-  color: #FFF;
+  color: #fff;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 22px;
   line-height: 28px;
+  word-spacing: 0.8em;
+  margin-left: 78px;
 }
 
 .bet-button {
   position: relative;
   z-index: 1;
-  color: #FFF;
+  color: #fff;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 22px;
   line-height: 25.83px;
   text-decoration: none;
+  border: 1px solid #fff;
   padding: 12px 32px 11px 31px;
-  border: 1px solid #FFF;
 }
 
 /* lots */
@@ -212,13 +218,13 @@
 }
 
 .card-link {
-  text-decoration: none;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 464px;
   margin-top: 51px;
+  text-decoration: none;
 }
 
 .card__title {
@@ -230,11 +236,11 @@
   position: relative;
   z-index: 1;
   text-transform: uppercase;
-  white-space: inherit;
-  width: 254px;
-  word-wrap: break-word;
+  width: 254px;  
+}
+
+.card__title-border {
   border-bottom: 1px solid #fff;
-  
 }
 
 .card__text {
@@ -243,10 +249,9 @@
   line-height: 24px;
   position: relative;
   z-index: 1;
-  color: #FFF;
+  color: #fff;
   white-space: inherit;
   max-width: 254px;
-  
 }
 
 .lots__look-more-link {
@@ -266,10 +271,9 @@
   align-items: center;
   grid-template-columns: 359px 693px;
   grid-template-rows: 275px 320px;
-  grid-template-areas: 
-  "about__logo about__title"
-  ". about__text"
-  ;
+  grid-template-areas:
+    "about__logo about__title"
+    ". about__text";
 }
 
 .about__logo {
